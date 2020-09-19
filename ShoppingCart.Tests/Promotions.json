@@ -1,0 +1,17 @@
+[
+  {
+    "PromotionType": "FlatRatePromotion",
+    "Combination": { "A": 3 },
+    "Price": 130
+  },
+  {
+    "PromotionType": "FlatRatePromotion",
+    "Combination": { "B": 2 },
+    "Price": 45
+  },
+  {
+    "PromotionType": "FlatRatePromotion",
+    "Combination": { "C": 1, "D": 1 },
+    "Price": 30
+  }
+]
