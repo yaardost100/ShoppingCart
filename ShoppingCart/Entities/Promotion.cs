@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ShoppingCart.Entities
 {
-    class Promotion
+    public class Promotion
     {
         public string PromotionType { get; set; }
         public List<Distribution> Combination { get; set; }
