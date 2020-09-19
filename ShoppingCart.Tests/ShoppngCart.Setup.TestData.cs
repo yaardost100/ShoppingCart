@@ -8,7 +8,7 @@ namespace ShoppingCart.Tests
 {
     public partial class ShoppingCartTests
     {
-        public async Task<IEnumerable<Promotion>> SetUpPromotions()
+        private async Task<IEnumerable<Promotion>> SetUpPromotions()
         {
             var promotionsJson = await File.ReadAllTextAsync("Promotions.json");
             var promos = JsonConvert.DeserializeObject<List<Promotion>>(promotionsJson);
@@ -16,7 +16,7 @@ namespace ShoppingCart.Tests
             return promos;
         }
 
-        public async Task<IEnumerable<SKUPrice>> SetUpSKUDefaultPrices()
+        private async Task<IEnumerable<SKUPrice>> SetUpSKUDefaultPrices()
         {
             var skuUnitPriceJson = await File.ReadAllTextAsync("SKUUnitPrice.json");
             var skuUnitPrice = JsonConvert.DeserializeObject<List<SKUPrice>>(skuUnitPriceJson);

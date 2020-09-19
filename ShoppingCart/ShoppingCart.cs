@@ -10,7 +10,7 @@ namespace ShoppingCart
         private readonly IEnumerable<Promotion> _promotions;
         public Dictionary<string, int> CurrentCart { get; set; }
 
-        public ShoppingCart(List<SKUPrice> skuPrice, List<Promotion> promotions)
+        public ShoppingCart(IEnumerable<SKUPrice> skuPrice, IEnumerable<Promotion> promotions)
         {
             _skuPrice = skuPrice;
             _promotions = promotions;
