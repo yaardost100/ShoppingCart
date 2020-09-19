@@ -1,17 +1,36 @@
 [
   {
     "PromotionType": "FlatRatePromotion",
-    "Combination": { "A": 3 },
+    "Combination": [
+      {
+        "SKUId": "A",
+        "Weigth": 3
+      }
+    ],
     "Price": 130
   },
   {
     "PromotionType": "FlatRatePromotion",
-    "Combination": { "B": 2 },
+    "Combination": [
+      {
+        "SKUId": "B",
+        "Weigth": 2
+      }
+    ],
     "Price": 45
   },
   {
     "PromotionType": "FlatRatePromotion",
-    "Combination": { "C": 1, "D": 1 },
+    "Combination": [
+      {
+        "SKUId": "C",
+        "Weigth": 1
+      },
+      {
+        "SKUId": "D",
+        "Weigth": 1
+      }
+    ],
     "Price": 30
   }
 ]

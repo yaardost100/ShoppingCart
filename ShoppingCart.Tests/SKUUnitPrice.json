@@ -1,0 +1,18 @@
+[
+  {
+    "SKUId": "A",
+    "Price": 50
+  },
+  {
+    "SKUId": "B",
+    "Price": 30
+  },
+  {
+    "SKUId": "C",
+    "Price": 20
+  },
+  {
+    "SKUId": "D",
+    "Price": 15
+  }
+]
