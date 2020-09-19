@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ShoppingCart.Tests
+﻿namespace ShoppingCart.Tests
 {
     public partial class ShoppingCartTests
     {
-
     }
 }
