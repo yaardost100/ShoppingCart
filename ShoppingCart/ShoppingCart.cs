@@ -1,6 +1,7 @@
 ﻿using ShoppingCart.Entities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ShoppingCart
 {
@@ -18,7 +19,23 @@ namespace ShoppingCart
 
         public int ApplyPromotions()
         {
+            if (!_promotions.Any())
+            {
+                return CalculatePriceWithoutPromotion();
+            }
             throw new NotImplementedException();
+        }
+
+        private int CalculatePriceWithoutPromotion()
+        {
+            var cartPrice = 0;
+            var skuDefaults = _skuPrice.ToDictionary(item => item.SKUId, item => item.Price);
+            foreach (var keyValuePair in CurrentCart)
+            {
+                cartPrice += skuDefaults[keyValuePair.Key] * keyValuePair.Value;
+            }
+
+            return cartPrice;
         }
     }
 }
